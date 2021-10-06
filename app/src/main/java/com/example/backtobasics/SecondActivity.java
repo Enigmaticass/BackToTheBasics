@@ -37,22 +37,27 @@ public class SecondActivity extends AppCompatActivity {
 
         int answerNumber = 0;
 
+        //Addition
         if (operator.equals('+')){
             answerNumber = intNum1 + intNum2;
         }
-
+        //Subtraction
         else if(operator.equals('-')){
             answerNumber = intNum1 - intNum2;
         }
+        //Multiplication
         else if(operator.equals('*')){
             answerNumber = intNum1 * intNum2;
         }
+        //Division
         else if(operator.equals('/')){
             answerNumber = intNum1 / intNum2;
         }
+        //Error
         else {
             ToastMsg("THAT'S NOT AN INTEGER!");
         }
+        //Set the answer
         answer.setText(Integer.toString(answerNumber));
     }
 
