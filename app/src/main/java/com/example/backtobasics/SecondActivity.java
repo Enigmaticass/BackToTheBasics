@@ -18,7 +18,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void ToastMsg(String msg) {
         Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
-        toast.show();
+        toast.show(); //displays message
     }
 
     public void onClick(View view) {

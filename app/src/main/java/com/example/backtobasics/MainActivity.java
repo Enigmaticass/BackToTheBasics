@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void toastMsg(String msg) {
         Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
-        toast.show();
+        toast.show(); //shows toast
     }
 
     public void onClick(View view) {
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         TextView textPassword = findViewById(R.id.textViewPassword);
         String content = editPassword.getText().toString();
 
-        if(content.equals("password")){
-            startActivity(new Intent(MainActivity.this,SecondActivity.class));
+        if(content.equals("password")){ //checks if password is correct
+            startActivity(new Intent(MainActivity.this,SecondActivity.class)); //Sends to SecondActivity
         }else{
         toastMsg("Wrong Password! C'mon Man");
         }
