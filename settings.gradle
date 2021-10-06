@@ -1,0 +1,2 @@
+rootProject.name = "Back To Basics"
+include ':app'
