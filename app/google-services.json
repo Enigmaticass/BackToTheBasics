@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855848882206",
+    "project_id": "back-to-basics-f30dd",
+    "storage_bucket": "back-to-basics-f30dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855848882206:android:6c41eacd60cd5c7c491e0f",
+        "android_client_info": {
+          "package_name": "com.example.backtobasics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855848882206-64rvkqeld9c68omeqap1hbbv804j9jp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzIeAzP4IrDvU5iaUfS4jfdvPohQ6eMCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855848882206-64rvkqeld9c68omeqap1hbbv804j9jp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

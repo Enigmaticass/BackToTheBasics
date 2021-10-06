@@ -9,7 +9,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
 
+
         EditText editPassword = findViewById(R.id.editTextPassword);
         TextView textPassword = findViewById(R.id.textViewPassword);
         String content = editPassword.getText().toString();
@@ -33,5 +38,10 @@ public class MainActivity extends AppCompatActivity {
         }else{
         toastMsg("Wrong Password! C'mon Man");
         }
+    }
+    public void onClick2(View view){
+        DatabaseReference myRef = database.getReference("message");
+
+        myRef.setValue("Goodbye World! See You Tomorrow!");
     }
 }
